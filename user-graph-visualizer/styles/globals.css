@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  background: radial-gradient(circle at center, #050505 0%, #000 100%);
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  overflow: hidden;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 15px #00ffff;
+  letter-spacing: 1px;
+}
+
+.wire {
+  stroke-width: 2px;
+}
+
+.bulb {
+  stroke: #fff;
+  stroke-width: 2;
+  animation: bulbPulse 2s infinite ease-in-out alternate;
+}
+
+@keyframes bulbPulse {
+  from {
+    filter: drop-shadow(0 0 8px #fff);
+  }
+  to {
+    filter: drop-shadow(0 0 18px #00ffff);
+  }
+}
+
+.label {
+  font-size: 14px;
+  fill: #fff;
+  pointer-events: none;
+}
